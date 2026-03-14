@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scrisors</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="theme-color" content="#595e4e">
+    <link rel="manifest" href="manifest.json">
+</head>
+
+<body>
+    <div class="score-board">
+        <div class="score">Your Score: <span id="user-score">0</span></div>
+        <div class="score">Computer Score: <span id="computer-score">0</span></div>
+        <div class="score">Ties: <span id="ties-score">0</span></div><br>
+        <div class="score">You picked: <span id="userMove"></span></div>
+        <div class="score">Computer picked: <span id="compMove"></span></div><br>
+        <div id="result-lose" class="scoreres" style="display: none;">You lose!</div>
+        <div id="result-win" class="scoreres" style="display: none;">You win!</div>
+        <div id="result-tie" class="scoreres" style="display: none;">It's a tie!</div>
+    </div>
+    <div class="buttons">
+        <button class="btn" onclick="Player('Rock')">Rock</button>
+        <button class="btn" onclick="Player('Paper')">Paper</button>
+        <button class="btn" onclick="Player('Scissors')">Scissors</button><br>
+        <button class="btnr" onclick="ResetScore()">Reset Score</button>
+    </div>
+<script src="script.js"></script>
+</body>
+</html> 
